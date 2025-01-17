@@ -44,7 +44,19 @@
     <div class="translation">
         <p>{{ translation }}</p>
     </div>
-    
+    </style>
+</head>
+<body>
+    <h1>Video Transcription</h1>
+    <p>Upload a video file to transcribe:</p>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="video/*" required>
+        <button type="submit">Transcribe</button>
+    </form>
+    <h1>Transcription Result</h1>
+    <div class="transcription">
+        <p>{{ transcription }}</p>
+    </div>
     <a href="/">Go back</a>
 </body>
 </html>

@@ -1,13 +1,17 @@
-# GitHub Codespaces ♥️ Flask
+# Video transcription and translation using OpenAI Whisper 
 
-Welcome to your shiny new Codespace running Flask! We've got everything fired up and running for you to explore Flask.
+Transcription - Converts the uploaded video's audio into text.
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+Translation - Converts the uploaded video's transcription from English to Spanish. Can change the target language in the dest parameter of the translator.translate() function.
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+Developed using 'whisper', a transformer model created by OpenAI.
+
+Built on
+- Flask (Python web framework).
+- HTML,CSS.
 
 To run this application:
 
 ```
-flask --debug run
+flask run
 ```

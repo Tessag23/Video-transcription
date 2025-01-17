@@ -1,7 +1,10 @@
 from flask import Flask, request, render_template
 import whisper
 import os
+
 from googletrans import Translator
+
+
 
 app = Flask(__name__)
 
@@ -15,6 +18,7 @@ if not os.path.exists(UPLOAD_FOLDER):
 
 # Set up the upload folder in the app config
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
 
 # Initialize the Google Translate API
 translator = Translator()
